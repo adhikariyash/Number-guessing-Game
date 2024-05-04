@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(https://img.freepik.com/free-vector/realistic-neon-lights-background_23-2148907367.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.high{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.616);
+    padding: 30px;
+    border-radius: 30px;
+    border: 5px solid white;
+}
+.high h1{
+    font-size: 3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    padding: 10px;
+    border-bottom: 2px solid rgb(239, 167, 125);
+}
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.main h2{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main input{
+    padding: 9px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+.bdy{
+    display: flex;
+    gap: 1rem;
+}
+.main button{
+    padding:20px;
+    font-size: 1.67em;
+    border-radius: 30px;
+    border:none;
+}
+.main button:hover{
+    box-shadow: 2px 2px 20px rgb(0, 0, 255);
+}
+#play{
+    font-size: 1.4rem;
+    display:none;
+}
+.result{
+    font-size: 1.7rem;
+    margin-top: 20px;
+    font-weight: 800;
+    transition: all 1s ease-in-out;
+}
+
+
+@media (max-width: 800px){
+    .main h2{
+        font-size: 1.3rem
+    }
+    .main input{
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+    .main button{
+        font-size: 1.3rem;
+    }
+    .main{
+        padding: 10px;
+      transition: all 1s ease-in;
+    }
+    .high{
+        padding: 10px;
+    }
+    .high h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 800px){
+    .main h2{
+        font-size: 1.1rem
+    }
+    .main input{
+        font-size: 1rem;
+      
+    }
+    .main{
+        gap: 1rem;
+    }
+    .bdy{
+        gap: 0.5rem;
+    }
+    .main button{
+        font-size: 1rem;
+        padding: 10px;
+    }
+    
+    .high h1{
+        font-size: 1.5rem;
+    }
+}
